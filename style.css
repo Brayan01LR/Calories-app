@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+header h1 {
+  color: white;
+  font-size: 2.5em;
+}
+
+header {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  background-color: #4ca8d6;
+  align-items: center;
+  color: #75caff;
+}
+
+i {
+  width: 100px;
+  height: 100px;
+  font-size: 2.5em;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 50px;
+  cursor: pointer;
+}
+.cuentas h1 {
+  font-size: 40px;
+}
+
+.cuenta-calorias-light {
+  width: 40%;
+  height: 85vh;
+  background-color: rgb(255, 255, 255);
+  min-width: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+.plato-1-light {
+  height: 250px;
+  width: 250px;
+  background-color: #9b9b9b;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.color {
+  background-color: #ff000088;
+}
+
+.dark-mode-nav {
+  background-color: #095479;
+}
+.platos-comida-light {
+  height: 85vh;
+  width: 60%;
+  background-color: #cecece;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.platos-comida-dark {
+  background-color: #313131;
+}
+
+.cuenta-calorias-dark {
+  background-color: rgb(0, 0, 0);
+}
+.global {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cuentas {
+  width: 300px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cuentas p {
+  font-size: 2.2em;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.cuentas-dark {
+  color: white;
+}
+.pizza-plato {
+  width: 230px;
+}
+.tacos-plato {
+  width: 210px;
+}
+.helado-plato {
+  width: 230px;
+}
+.hamburguesa-plato {
+  width: 190px;
+}
+.tema-seleccionado {
+  color: rgb(255, 0, 0);
+}
+
+@media (max-width: 1100px) {
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 85vh;
+  }
+
+  .platos-comida-light {
+    width: 100%;
+    height: 70%;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .global {
+    flex-direction: column-reverse;
+  }
+  .cuenta-calorias-light {
+    width: 100%;
+    height: 30%;
+  }
+  .plato-1-light {
+    width: auto;
+    height: auto;
+  }
+  .pizza-plato {
+    width: 170px;
+  }
+  .tacos-plato {
+    width: 170px;
+  }
+  .helado-plato {
+    width: 170px;
+  }
+  .hamburguesa-plato {
+    width: 170px;
+  }
+  .cuentas{
+    width: 100%;
+  }
+}
+@media (max-width: 430px) {
+  .plato-1-light {
+    width: auto;
+    height: auto;
+  }
+  .pizza-plato {
+    width: 150px;
+  }
+  .tacos-plato {
+    width: 150px;
+  }
+  .helado-plato {
+    width: 150px;
+  }
+  .hamburguesa-plato {
+    width: 150px;
+  }
+  .cuenta-calorias-light {
+    font-size: 0.7em;
+    width: 100%;
+    height: 25%;
+  }
+
+  .cuentas {
+    height: auto;
+    
+  }
+  header > h1 {
+    font-size: 2em;
+  }
+  i {
+    font-size: 2em;
+  }
+  .platos-comida-light {
+    width: auto;
+    height: 75%;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .global {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 335px) {
+  .platos-comida-light {
+    height: 80%;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .plato-1-light {
+    width: auto;
+    height: auto;
+  }
+  header > h1 {
+    font-size: 1.3em;
+  }
+
+  i {
+    font-size: 1.7em;
+  }
+  .pizza-plato {
+    width: 110px;
+  }
+  .tacos-plato {
+    width: 110px;
+  }
+  .helado-plato {
+    width: 110px;
+  }
+  .hamburguesa-plato {
+    width: 110px;
+  }
+  .global {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .cuenta-calorias-light {
+    height: 20%;
+    width: auto;
+  }
+}
